@@ -28,6 +28,6 @@ print('Predicted :', classifier.predict(X), '\nReal class :', y)
 
 classifier.load('weights/Meso4_F2F')
 
-predictions = compute_accuracy(classifier, 'test_videos')
+predictions = compute_accuracy(classifier, '/home/aneesh/Work/data/deepfaketimit/DeepfakeTIMIT/')  # ''/home/aneesh/Work/data/deepfaketimit/DeepfakeTIMIT/higher_quality/fcmh0/')
 for video_name in predictions:
     print('`{}` video class prediction :'.format(video_name), predictions[video_name][0])
